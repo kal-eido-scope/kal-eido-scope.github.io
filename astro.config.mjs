@@ -28,7 +28,7 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 // https://astro.build/config
 export default defineConfig({
     site: "http://kal-eido-scope.github.io",
-    base: "/blog-for-linux",
+    base: "",
     trailingSlash: "always",
 
     integrations: [
