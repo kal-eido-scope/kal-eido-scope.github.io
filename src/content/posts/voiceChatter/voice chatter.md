@@ -2,7 +2,7 @@
 title: Voice Chatter 下载及使用说明
 published: 2025-11-18
 description: '互联网拾遗，实用工具下载'
-image: ''
+image: 'pic\voiceChatter-icon-for-blog.png'
 tags: [下载,工具,语音]
 category: '资源下载'
 draft: false 
@@ -36,7 +36,7 @@ voiceChatter服务器端下载[点此](https://sourceforge.net/projects/voicecha
 
 服务器端安装并打开VoiceChatterServer.exe
 
-1. 指定通信使用的端口，直接回车即使用默认使用UDP通信，默认使用7878端口<span id="port"></span>
+1. 指定通信使用的端口，直接回车即使用默认使用UDP通信，默认使用7878端口`<span id="port">`
 
 ```
 Config file path is ./. file is vchatserver.conf
@@ -53,7 +53,7 @@ Enter an admin password (max length is 32)
 : yourPassword1
 ```
 
-3. 为服务器指定密码（访客密码），最长32位，直接回车即不设置密码<span id="GuestPassword"></span>
+3. 为服务器指定密码（访客密码），最长32位，直接回车即不设置密码`<span id="GuestPassword">`
 
 ```
 Enter a password for the server, or leave blank for no password (max length is 32)
@@ -95,7 +95,7 @@ Note that the better the quality the more bandwidth it will use.
 ```
 
 8. 是否启用远程管理？（似乎即使这里关闭了，在客户端依然可以通过输入管理员密码以启用）
-    如果启用了则后会使用到TCP。<span id="TCP"></span>
+   如果启用了则后会使用到TCP。`<span id="TCP">`
 
 ```
 Should the remote admin interface be enabled? 
@@ -134,19 +134,19 @@ SEND: 0 bytes/10 sec(0.00 KB/s，0.00 kb/s)
    打开 **高级安全 Windows防火墙**，在入站和出站规则中新建允许VoiceChatterServer.exe的规则
 
 * 高级防火墙界面
-  ![防火墙1](pic/fwDefender1.png "界面展示")
+  ![防火墙1](pic\fwDefender1.png "界面展示")
 * 右键新建规则
-  ![防火墙2](pic/fwDefender2.png "新建规则")
+  ![防火墙2](pic\fwDefender2.png "新建规则")
 * 选择规则类型
-  ![防火墙3](pic/fwDefender3.png "规则类型")
+  ![防火墙3](pic\fwDefender3.png "规则类型")
 * 选择VoiceChatter程序所在路径
-  ![防火墙4](pic/fwDefender4.png "程序路径")
+  ![防火墙4](pic\fwDefender4.png "程序路径")
 * 指定连接匹配时的操作
-  ![防火墙5](pic/fwDefender5.png "连接操作")
+  ![防火墙5](pic\fwDefender5.png "连接操作")
 * 指定规则运用场景
-  ![防火墙6](pic/fwDefender6.png "配置文件")
+  ![防火墙6](pic\fwDefender6.png "配置文件")
 * 命名并附注
-  ![防火墙7](pic/fwDefender7.png "名称备注")
+  ![防火墙7](pic\fwDefender7.png "名称备注")
 
 2. 前往云服务器的控制台为防火墙添加放行规则。
    规则选择UDP，如果在[第8步](#TCP)选择了启用，请额外添加TCP规则
@@ -158,13 +158,12 @@ SEND: 0 bytes/10 sec(0.00 KB/s，0.00 kb/s)
 
 1. Self - Connect - New Server
 
-    其中Password输入[第3步](#GuestPassword)设定的服务器密码，如未设置则留空即可。
-    ![Sample](pic/sample1.png "示例图1")
+   其中Password输入[第3步](#GuestPassword)设定的服务器密码，如未设置则留空即可。
+   ![Sample](pic\sample1.png "示例图1")
 
-    填完信息点击connect，听到"connection established"提示音
-    ![Sample](pic/sample2.png "示例图2")
-
+   填完信息点击connect，听到"connection established"提示音
+   ![Sample](pic\sample2.png "示例图2")
 2. Self - Settings
-    选择你使用的麦克风、扬声器，
-    Talk Key指定按住说话的按键
-    ![Sample](pic/sample3.png "示例图3")
+   选择你使用的麦克风、扬声器，
+   Talk Key指定按住说话的按键
+   ![Sample](pic\sample3.png "示例图3")
