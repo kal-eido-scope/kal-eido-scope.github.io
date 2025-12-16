@@ -2,7 +2,7 @@
 title: Windows Server服务器nginx配置
 published: 2025-12-15
 description: '给服务上nginx来处理各式端口需求'
-image: 'pic\nginx-winserver.png'
+image: 'pic/nginx-winserver.png'
 tags: [nginx,服务器,Windows Server]
 category: '菜鸟心得'
 draft: false 
